@@ -1,0 +1,15 @@
+{
+    "atomType": "Molecule",
+    "name": "Test Doughnut",
+    "x": 0,
+    "y": 0,
+    "uniqueID": "288de4a0-9136-4c1e-a79f-f7356a09b12d",
+    "ioValues": [],
+    "topLevel": true,
+    "allAtoms": [],
+    "allConnectors": [],
+    "unitsKey": "MM",
+    "fileTypeVersion": 1,
+    "compiledBom": {},
+    "filetypeVersion": 1
+}
