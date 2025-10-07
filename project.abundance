@@ -10,16 +10,16 @@
     {
       "atomType": "Output",
       "name": "Output",
-      "x": 0.98,
-      "y": 0.5,
+      "x": 0.9750000000000001,
+      "y": 0.3704600484261501,
       "uniqueID": "772d6f1e-6b16-4a1f-b7ac-a1ba7e2daff8",
       "ioValues": []
     },
     {
       "atomType": "Circle",
       "name": "Circle",
-      "x": 0.35507812499999997,
-      "y": 0.14527845036319612,
+      "x": 0.091015625,
+      "y": 0.23970944309927358,
       "uniqueID": "725d4584-8f7e-41db-99bb-adbc87af67bb",
       "ioValues": [
         {
@@ -32,8 +32,8 @@
     {
       "atomType": "Circle",
       "name": "Circle",
-      "x": 0.1484375,
-      "y": 0.7409200968523002,
+      "x": 0.092578125,
+      "y": 0.5302663438256658,
       "uniqueID": "b52373b3-6e76-4b61-b234-23c415db9f78",
       "ioValues": [
         {
@@ -46,10 +46,57 @@
     {
       "atomType": "Difference",
       "name": "Difference",
-      "x": 0.196484375,
-      "y": 0.39951573849878935,
+      "x": 0.17578125,
+      "y": 0.37772397094430993,
       "uniqueID": "d067fc1a-2576-4d4c-a28a-11c8509b852e",
       "ioValues": []
+    },
+    {
+      "atomType": "Extrude",
+      "name": "Extrude",
+      "x": 0.26875,
+      "y": 0.46246973365617433,
+      "uniqueID": "cc34ff9a-5bf3-4582-b12c-5efca3956241",
+      "ioValues": [
+        {
+          "name": "height",
+          "ioValue": 12.7,
+          "currentEquation": "12.7"
+        }
+      ]
+    },
+    {
+      "atomType": "Gcode",
+      "name": "Gcode",
+      "x": 0.8171875,
+      "y": 0.45520581113801456,
+      "uniqueID": "5cf8a55d-de55-444f-b6be-4238faa58037",
+      "ioValues": [
+        {
+          "name": "Tool Size",
+          "ioValue": 6.35
+        },
+        {
+          "name": "Passes",
+          "ioValue": 3,
+          "currentEquation": "3"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500,
+          "currentEquation": "1500"
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Test Doughnut"
+        }
+      ],
+      "partName": "Test Doughnut",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -64,10 +111,28 @@
       "ap2Name": "geometry2",
       "ap1ID": "b52373b3-6e76-4b61-b234-23c415db9f78",
       "ap2ID": "d067fc1a-2576-4d4c-a28a-11c8509b852e"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "d067fc1a-2576-4d4c-a28a-11c8509b852e",
+      "ap2ID": "cc34ff9a-5bf3-4582-b12c-5efca3956241"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry",
+      "ap1ID": "cc34ff9a-5bf3-4582-b12c-5efca3956241",
+      "ap2ID": "5cf8a55d-de55-444f-b6be-4238faa58037"
+    },
+    {
+      "ap1Name": "output",
+      "ap2Name": "number or geometry",
+      "ap1ID": "5cf8a55d-de55-444f-b6be-4238faa58037",
+      "ap2ID": "772d6f1e-6b16-4a1f-b7ac-a1ba7e2daff8"
     }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": {},
+  "compiledBom": [],
   "filetypeVersion": 1
 }
