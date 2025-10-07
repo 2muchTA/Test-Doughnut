@@ -1,15 +1,73 @@
 {
-    "atomType": "Molecule",
-    "name": "Test Doughnut",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "288de4a0-9136-4c1e-a79f-f7356a09b12d",
-    "ioValues": [],
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "name": "Test Doughnut",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "288de4a0-9136-4c1e-a79f-f7356a09b12d",
+  "ioValues": [],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "name": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "772d6f1e-6b16-4a1f-b7ac-a1ba7e2daff8",
+      "ioValues": []
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.35507812499999997,
+      "y": 0.14527845036319612,
+      "uniqueID": "725d4584-8f7e-41db-99bb-adbc87af67bb",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 300,
+          "currentEquation": "300"
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "name": "Circle",
+      "x": 0.1484375,
+      "y": 0.7409200968523002,
+      "uniqueID": "b52373b3-6e76-4b61-b234-23c415db9f78",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 150,
+          "currentEquation": "150"
+        }
+      ]
+    },
+    {
+      "atomType": "Difference",
+      "name": "Difference",
+      "x": 0.196484375,
+      "y": 0.39951573849878935,
+      "uniqueID": "d067fc1a-2576-4d4c-a28a-11c8509b852e",
+      "ioValues": []
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry1",
+      "ap1ID": "725d4584-8f7e-41db-99bb-adbc87af67bb",
+      "ap2ID": "d067fc1a-2576-4d4c-a28a-11c8509b852e"
+    },
+    {
+      "ap1Name": "geometry",
+      "ap2Name": "geometry2",
+      "ap1ID": "b52373b3-6e76-4b61-b234-23c415db9f78",
+      "ap2ID": "d067fc1a-2576-4d4c-a28a-11c8509b852e"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "compiledBom": {},
+  "filetypeVersion": 1
 }
